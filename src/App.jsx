@@ -79,9 +79,9 @@ const confirmedSpeakers = [
 
   const sponsors = [
     {
-      name: "South African Quantum Technology Initiative",
+      name: "cqcteclab",
       tier: "Platinum",
-      logo: "/CQCTec logo.png"
+      logo: "./public/cqc.png"
     },
     {
       name: "University of KwaZulu-Natal",
