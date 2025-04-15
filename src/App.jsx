@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { CalendarIcon, UserGroupIcon, AcademicCapIcon, MapPinIcon } from '@heroicons/react/24/outline';
-//import { Logo } from '../public/ukzn.png';
+import cqcLogo from '/public/cqc.png';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -81,7 +81,7 @@ const confirmedSpeakers = [
     {
       name: "cqcteclab",
       tier: "Platinum",
-      logo: "/cqc.png"
+      logo: cqcLogo
     },
     {
       name: "University of KwaZulu-Natal",
