@@ -81,7 +81,7 @@ const confirmedSpeakers = [
     {
       name: "cqcteclab",
       tier: "Platinum",
-      logo: "./public/cqc.png"
+      logo: "/cqc.png"
     },
     {
       name: "University of KwaZulu-Natal",
