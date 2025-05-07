@@ -1,7 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
-import { CalendarIcon, UserGroupIcon, AcademicCapIcon, MapPinIcon } from '@heroicons/react/24/outline';
-//import { Logo } from '../public/ukzn.png';
+import { CalendarIcon, MapPinIcon } from '@heroicons/react/24/outline';
+
+
+
+import HeLogo from '/public/HeraeusLogo.png';
+import alcLogo from '/public/alclogo.png';
+import witsLogo from '/public/wits-logo.png';
+import tecAfrica from '/public/CQCtecafrica.png';
+
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -81,17 +88,17 @@ const confirmedSpeakers = [
     {
       name: "cqcteclab",
       tier: "Platinum",
-      logo: "./public/cqc.png"
+      logo: witsLogo
     },
     {
       name: "University of KwaZulu-Natal",
       tier: "Platinum",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/UKZN_logo.svg/1200px-UKZN_logo.svg.png"
+      logo: alcLogo
     },
     {
       name: "Microsoft Quantum",
       tier: "Platinum",
-      logo: "https://saquti.org/wp-content/uploads/2024/12/sa-quti-logo-final.png"
+      logo: HeLogo
     }
   ];
 
@@ -143,31 +150,58 @@ const confirmedSpeakers = [
       </div>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-center text-orange-600 mb-12">Event Insight</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Why Attend?</h3>
-              <p className="text-gray-600">
-                Join us for 4 days of groundbreaking discussions and a unique opportunity to connect with top researchers and administrators committed to Quantum
-                 Science and Technology (QST) across Africa. It offers insights into the current higher education and
-                  research landscape in QST, fostering collaboration. Participants can explore industry-relevant applications
-                   of QST to drive economic growth. The event serves as a platform to shape the future of QST in Africa through knowledge exchange and partnerships.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">What to Expect</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Keynote speeches from academic and industry leaders</li>
-                <li>• A public lecture, to showcase current QST research across the continent</li>
-                <li>• Poster sessions</li>
-                <li>• Networking sessions</li>
-              </ul>
-            </div>
-          </div>
+<section id="about" className="bg-slate-200 py-20">
+  <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-2xl font-bold text-center text-orange-600 mb-12">Event Insight</h2>
+    
+    <div className="grid md:grid-cols-3 gap-8 items-start">
+      
+      {/* Why Attend - takes two-thirds on medium and up */}
+      <div className="md:col-span-2">
+        <h3 className="text-xl font-semibold mb-4">Why Attend?</h3>
+        <p className="text-gray-600">
+        Join us for four days as we host a small-scale, dedicated networking meeting aimed at bringing together scientists,
+         representatives of learned societies, and funding bodies—all committed to fostering an autonomous African research strategy and agenda in
+          quantum science and technology (QST). To maintain a focused strategy meeting, we plan to feature 22 speakers (including seven representatives from Germany)
+          and will also admit approximately 30 junior participants. These participants will actively engage in roundtable / fishbowl discussions and poster sessions.
+           Additionally, three junior participants will be selected to present their work as oral presentations.
+        </p>
+
+        <div className="mt-8">
+          <h3 className="text-xl font-semibold mb-4">What to Expect</h3>
+          <ul className="space-y-2 text-gray-600">
+            <li>• Keynote speeches from academic and industry leaders</li>
+            <li>• A public lecture, to showcase current QST research across the continent</li>
+            <li>• Poster sessions</li>
+            <li>• Networking sessions</li>
+          </ul>
         </div>
-      </section>
+        {/* Download Button */}
+        <div className="mt-8">
+          <a
+            href="/public/CQC2025.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-orange-600 text-white font-medium rounded-lg shadow-md hover:bg-orange-700 transition duration-300"
+          >
+            Download More Info (PDF)
+          </a>
+        </div>
+      </div>
+
+      {/* Image - goes up slightly and stays visible */}
+      <div className="flex justify-center md:justify-end -mt-12">
+        <img
+          src={tecAfrica}
+          alt="Tech Africa"
+          className="w-full max-w-xs md:max-w-sm animate-[bounce_5s_ease-in-out_infinite]"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
     <section id="speakers" className="bg-gray-100 py-8 px-3">
