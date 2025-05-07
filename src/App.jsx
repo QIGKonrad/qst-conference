@@ -4,10 +4,10 @@ import { CalendarIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
 
 
-import HeLogo from '/public/HeraeusLogo.png';
-import alcLogo from '/public/alclogo.png';
-import witsLogo from '/public/wits-logo.png';
-import tecAfrica from '/public/CQCtecafrica.png';
+import HeLogo from '/assets/HeraeusLogo.png';
+import alcLogo from '/assets/alclogo.png';
+import witsLogo from '/assets/wits-logo.png';
+import tecAfrica from '/assets/CQCtecafrica.png';
 
 
 function App() {
@@ -179,11 +179,10 @@ const confirmedSpeakers = [
         {/* Download Button */}
         <div className="mt-8">
           <a
-            href="/public/CQC2025.pdf" 
-            target="_blank"
-            rel="noopener noreferrer"
+            href="public/assets/cqctech.pdf" 
+            download="cqctech.pdf"
             className="inline-block px-6 py-3 bg-orange-600 text-white font-medium rounded-lg shadow-md hover:bg-orange-700 transition duration-300"
-            download>
+            >
             Download More Info (PDF)
           </a>
         </div>
