@@ -17,69 +17,69 @@ function App() {
 // Confirmed speakers with parsed details
 const confirmedSpeakers = [
   {
-    name: "Abderrahim El Allati",
+    name: "Prof. Abderrahim El Allati",
     institution: "Abdelmalek Essaadi University-Tetouan",
     title: "Setting up experimental quantum physics curricula in Africa",
     commitment: "Confirmed"
   },
   {
-    name: "Alain Dikande",
-    institution: "",
-    title: "QST in Cameroon",
-    commitment: "Confirmed"
-  },
-  {
-    name: "Andrew Forbes",
+    name: "Prof. Andrew Forbes",
     institution: "University of Witwatersrand, Johannesburg, South Africa",
     title: "QST in South Africa",
     commitment: "Confirmed"
   },
   {
-    name: "Ali Hassanali",
+    name: "Prof. Ali Hassanali",
     institution: "ICTP, Trieste",
     title: "Sustainable science networking between continents",
     commitment: "Confirmed"
   },
   {
-    name: "Yassine Hassouni",
-    institution: "University Mohammed V, Rabat, Morocco",
-    title: "QST in Morocco",
+    name: "Prof. Ahmed Younes",
+    institution: "Alexandria Quantum Computing Group, Alamein International University",
+    title: "QST in Egypt",
     commitment: "Confirmed"
   },
   {
-    name: "Henry Martin",
+    name: "Dr. Henry Martin",
     institution: "KNUST, Kumasi, Ghana",
     title: "QST in Ghana",
     commitment: "Confirmed"
   },
   {
-    name: "Roderich Moessner",
+    name: "Prof. Roderich Moessner",
     institution: "MPI für Physik komplexer Systeme, Dresden",
     title: "The scientific publishing landscape and the essential ingredients for original science",
     commitment: "Confirmed"
   },
   {
-    name: "Stefan Jorda",
+    name: "Dr. Stefan Jorda",
     institution: "WEH, Hanau",
     title: "The Wilhelm and Else Heraeus Foundation’s perspective",
     commitment: "Confirmed"
   },
   {
-    name: "Mourad Telmini",
+    name: "Prof. Mourad Telmini",
     institution: "University of Tunis El Manar, Tunesia",
     title: "QST in Tunesia",
     commitment: "Confirmed"
   },
   {
-    name: "Mahmoud Abdel-Aty",
+    name: "Prof. Mahmoud Abdel-Aty",
     institution: "Ahlia University, Bahrain",
     title: "The Arabic perspective",
     commitment: "Confirmed"
   },
   {
-    name: "Happy Sithole",
+    name: "Dr. Happy Sithole",
     institution: "Centre for High Performance Computing, Pretoria",
     title: "Forming an international Quantum Computing Network",
+    commitment: "Confirmed"
+  },
+  {
+    name: "Mr. Chinonso Onah",
+    institution: "Department of Physics, RWTH Aachen University/Volkswagen AG, Germany",
+    title: "Industrial Perspective (Germany)",
     commitment: "Confirmed"
   }
 ];
@@ -140,7 +140,7 @@ const confirmedSpeakers = [
             </div>
             <div className="flex  items-center">
               <MapPinIcon className="h-6 w-6 mr-2" />
-              <span>Durban, South Africa</span>
+              <span>Premier Hotel Cutty Sark, Durban</span>
             </div>
           </div>
           <button className="bg-orange-600 text-white px-8 py-3 rounded-md text-lg hover:bg-orange-700">
@@ -206,7 +206,7 @@ const confirmedSpeakers = [
     <section id="speakers" className="bg-gray-100 py-8 px-3">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl font-bold text-center text-orange-600 mb-6"> Speakers</h2>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
           {confirmedSpeakers.map((speaker, index) => (
             <div
               key={index}
@@ -256,17 +256,17 @@ const confirmedSpeakers = [
 
               <tr>
                 <td> <span className='font-bold'>9:00</span></td>
-                <td> Akin-Ojo (Rwanda)</td>
+                <td> N.N</td>
                 <td> Abdel-Aty (Bahrain)</td>
-                <td> Prince Osei (AIMS)</td>
-                <td> Kunst (Erlangen)</td>
+                <td> N.N</td>
+                <td> N.N.</td>
                 <td> role of academia</td>
               </tr>
 
               <tr>
               <td> <span className='font-bold'>9:30</span></td>
                 <td> Hassouni (Morocco)</td>
-                <td> Tabi (Bostwana)</td>
+                <td>N.N</td>
                 <td> Jorda (WEH)</td>
                 <td> Moessner (Dresden)</td>
                 <td> role of industry</td>
@@ -276,9 +276,9 @@ const confirmedSpeakers = [
               <tr>
               <td> <span className='font-bold'>10:00</span></td>
                 <td> Forbes (South Africa)</td>
-                <td> Dikande (Cameroon)</td>
+                <td> N.N</td>
                 <td> Sithole (CHPC)</td>
-                <td> Pfau (Stuttgart)</td>
+                <td> Loew (Stuttgart)</td>
                 <td> role of networks</td>
               </tr>
 
@@ -305,10 +305,10 @@ const confirmedSpeakers = [
 
               <tr>
               <td> <span className='font-bold'>11:00</span></td>
-                <td> Sakr (Egypt)</td>
+                <td> N.N.</td>
                 <td> Younes (Egypt)</td>
                 <td> UNESCO/SAPhyNet</td>
-                <td> Buhmann (Kassel)</td>
+                <td> N.N.</td>
                 <td> role of international partners</td>
               </tr>
 
@@ -317,16 +317,16 @@ const confirmedSpeakers = [
                 <td> Telmini (Tunisia)</td>
                 <td> El Allati (Morocco)</td>
                 <td> Hassanali (ICTP)</td>
-                <td> Ang'ong'a (Munich)</td>
+                <td> N.N.</td>
                 <td> to do list 2025/2026</td>
               </tr>
 
               <tr>
               <td> <span className='font-bold'>12:00</span></td>
                 <td> Martin (Ghana)</td>
-                <td> N.N</td>
-                <td> N.N</td>
-                <td> N.N</td>
+                <td> N.N.</td>
+                <td> N.N.</td>
+                <td> Chinonso</td>
                 <td> formation steering committee</td>
               </tr>
 
@@ -431,7 +431,8 @@ const confirmedSpeakers = [
             <div>
               <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
               <p>Email: konradt@ukzn.ac.za</p>
-              <p>Phone: +27 82 389 3981</p>
+              <p>Phone: +27 82 389 3981 </p>
+              <p>Office: +27 65 942 8307 </p>
             </div>
             <div>
               <h3 className="text-2xl font-semibold mb-4">Location</h3>
