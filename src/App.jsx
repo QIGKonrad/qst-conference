@@ -8,6 +8,7 @@ import HeLogo from '/assets/HeraeusLogo.png';
 import alcLogo from '/assets/alclogo.png';
 import witsLogo from '/assets/wits-logo.png';
 import tecAfrica from '/assets/CQCtecafrica.png';
+import pdfFile from './static-assets/cqctech.pdf';
 
 
 function App() {
@@ -81,7 +82,39 @@ const confirmedSpeakers = [
     institution: "Department of Physics, RWTH Aachen University/Volkswagen AG, Germany",
     title: "Industrial Perspective (Germany)",
     commitment: "Confirmed"
+  },
+
+  {
+    name: "Prof. Alain Dikande",
+    institution: "DDepartment of Physics, University of Buea, Cameroon ",
+    title: "QST in Cameroon",
+    commitment: "Confirmed"
+  },
+  {
+    name: "Dr. Prince Osei",
+    institution: "African Institute for Mathematical Sciences, Ghana",
+    title: "QST in Ghana",
+    commitment: " "
+  }, 
+  {
+    name: "Dr. Omololu Akin-Ojo",
+    institution: "ICTP East African Institute for Fundamental Research, Rwanda ",
+    title: "QST in Rwanda",
+    commitment: " "
+  },
+  {
+    name: "Prof. Robert Loew",
+    institution: "Albert-Ludwigs-Universität Freiburg, Germany",
+    title: "German Pespective",
+    commitment: " "
+  },
+  {
+    name: "Prof. Yassine Hassouni",
+    institution: "University Mohammed V, Rabat, Morocco",
+    title: "QST in Morocco ",
+    commitment: " "
   }
+
 ];
 
   const sponsors = [
@@ -110,7 +143,7 @@ const confirmedSpeakers = [
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <span className="text-xl font-bold text-orange-600">C<span className='text-black'>Q</span>C<span className='text-black'>tec</span> 2025</span>
+              <span className="text-xl font-bold text-orange-600">Q<span className='text-black'>S</span>T <span className='text-black'>Africa</span> 2025</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -140,7 +173,7 @@ const confirmedSpeakers = [
             </div>
             <div className="flex  items-center">
               <MapPinIcon className="h-6 w-6 mr-2" />
-              <span>Premier Hotel Cutty Sark, Durban</span>
+              <span>Premier Hotel Cutty Sark, Scottsburgh.</span>
             </div>
           </div>
           <button className="bg-orange-600 text-white px-8 py-3 rounded-md text-lg hover:bg-orange-700">
@@ -170,7 +203,7 @@ const confirmedSpeakers = [
         <div className="mt-8">
           <h3 className="text-xl font-semibold mb-4">What to Expect</h3>
           <ul className="space-y-2 text-gray-600">
-            <li>• Keynote speeches from academic and industry leaders</li>
+            <li>• Keynote speeches from researchers,  leaders of research networks and funding bodies.</li>
             <li>• A public lecture, to showcase current QST research across the continent</li>
             <li>• Poster sessions</li>
             <li>• Networking sessions</li>
@@ -179,8 +212,9 @@ const confirmedSpeakers = [
         {/* Download Button */}
         <div className="mt-8">
           <a
-            href="public/assets/cqctech.pdf" 
-            download="cqctech.pdf"
+            href={pdfFile} 
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-orange-600 text-white font-medium rounded-lg shadow-md hover:bg-orange-700 transition duration-300"
             >
             Download More Info (PDF)
@@ -256,9 +290,9 @@ const confirmedSpeakers = [
 
               <tr>
                 <td> <span className='font-bold'>9:00</span></td>
-                <td> N.N</td>
+                <td> Akin-Ojo (Rwanda) </td>
                 <td> Abdel-Aty (Bahrain)</td>
-                <td> N.N</td>
+                <td> Prince Osei (AIMS)</td>
                 <td> N.N.</td>
                 <td> role of academia</td>
               </tr>
@@ -266,7 +300,7 @@ const confirmedSpeakers = [
               <tr>
               <td> <span className='font-bold'>9:30</span></td>
                 <td> Hassouni (Morocco)</td>
-                <td>N.N</td>
+                <td>Tabi (Botswana)</td>
                 <td> Jorda (WEH)</td>
                 <td> Moessner (Dresden)</td>
                 <td> role of industry</td>
@@ -276,7 +310,7 @@ const confirmedSpeakers = [
               <tr>
               <td> <span className='font-bold'>10:00</span></td>
                 <td> Forbes (South Africa)</td>
-                <td> N.N</td>
+                <td>Dikande (Cameroon)</td>
                 <td> Sithole (CHPC)</td>
                 <td> Loew (Stuttgart)</td>
                 <td> role of networks</td>
@@ -305,7 +339,7 @@ const confirmedSpeakers = [
 
               <tr>
               <td> <span className='font-bold'>11:00</span></td>
-                <td> N.N.</td>
+                <td>Onah (Cameroon)</td>
                 <td> Younes (Egypt)</td>
                 <td> UNESCO/SAPhyNet</td>
                 <td> N.N.</td>
@@ -314,7 +348,7 @@ const confirmedSpeakers = [
 
               <tr>
               <td> <span className='font-bold'>11:30</span></td>
-                <td> Telmini (Tunisia)</td>
+                <td> Telmini (Tunesia)</td>
                 <td> El Allati (Morocco)</td>
                 <td> Hassanali (ICTP)</td>
                 <td> N.N.</td>
@@ -326,7 +360,7 @@ const confirmedSpeakers = [
                 <td> Martin (Ghana)</td>
                 <td> N.N.</td>
                 <td> N.N.</td>
-                <td> Chinonso</td>
+                <td> N.N</td>
                 <td> formation steering committee</td>
               </tr>
 
@@ -390,7 +424,7 @@ const confirmedSpeakers = [
 </div>
 
 <section id="sponsors" className="bg-gray-50">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
     {/* Sponsors */}
     <div  >
       <div className="mt-4">
